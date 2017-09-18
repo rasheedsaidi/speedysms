@@ -185,6 +185,7 @@ class SiteController extends Controller
     public function actionAbout()
     {
     	$this->layout = '@app/views/layouts/site';
+		var_dump("Got here");exit;
         return $this->render('about');
     }
     
@@ -196,7 +197,7 @@ class SiteController extends Controller
     
 	public function actionPricing()
     {
-    	$this->layout = '@app/views/layouts/site';
+    	$this->layout = '@app/views/layouts/inner';
         return $this->render('pricing');
     }
     

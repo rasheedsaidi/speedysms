@@ -10,11 +10,11 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'yeruyfhd74345yhrfew7r9oerfdd',
-			//'class' => 'app\models\Request',
+			'class' => 'app\models\Request',
 		    //'noCsrfRoutes' => [
 		    //    'http://helloworldng.com/speedysms/basic/web/blueimp-file-upload/server/php/',
 			//	'group/link','sms/send',
-		    //]
+		    //]			
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -59,6 +59,14 @@ $config = [
 	            ],
 	        ],
 	    ],
+		'urlManager' => [
+			'enablePrettyUrl' => true,
+			'showScriptName' => false,
+			'enableStrictParsing' => false,
+			'rules' => [
+				// ...
+			],
+		],
     ],
     'params' => $params,
     'modules' => [
